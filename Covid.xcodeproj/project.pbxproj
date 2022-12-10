@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B707868029443CEF00004187 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B707867F29443CEF00004187 /* APIManager.swift */; };
 		B71804CA294431630049522B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71804C9294431630049522B /* AppDelegate.swift */; };
 		B71804CC294431630049522B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71804CB294431630049522B /* SceneDelegate.swift */; };
 		B71804CE294431630049522B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71804CD294431630049522B /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B707867F29443CEF00004187 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		B71804C6294431630049522B /* Covid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Covid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B71804C9294431630049522B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B71804CB294431630049522B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B707867E29443CDE00004187 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B707867F29443CEF00004187 /* APIManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		B71804BD294431630049522B = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 		B71804C8294431630049522B /* Covid */ = {
 			isa = PBXGroup;
 			children = (
+				B707867E29443CDE00004187 /* API */,
 				B71804C9294431630049522B /* AppDelegate.swift */,
 				B71804CB294431630049522B /* SceneDelegate.swift */,
 				B71804CD294431630049522B /* ViewController.swift */,
@@ -258,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B707868029443CEF00004187 /* APIManager.swift in Sources */,
 				B71804CE294431630049522B /* ViewController.swift in Sources */,
 				B71804CA294431630049522B /* AppDelegate.swift in Sources */,
 				B71804CC294431630049522B /* SceneDelegate.swift in Sources */,
