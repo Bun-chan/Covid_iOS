@@ -14,14 +14,15 @@ class APIManager {
     
     static func getData() {
         let urlsession = URLSession(configuration: .default)
-        let url = "https://api.covidactnow.org/v2/state/NY.json?apiKey=492e432eabe64982aeb015647bd0ce4c"
+        let url = "https://api.covidactnow.org/v2/state/NY.json?apiKey=" + apiKey
         let urlRequest = URLRequest(url: URL(string: url)!)
         let task = urlsession.dataTask(with: urlRequest, completionHandler: { data, response, error in
-            print("data: ", data)
-            print("response: ", response)
-            print("error: ", error)
             
-            let json = JSONDecoder.decode(<#T##self: JSONDecoder##JSONDecoder#>)
+            if let json = try? JSONSerialization.jsonObject(with: data!, options: []) as? [String: Any] {
+                for item in json {
+                    print(item)
+                }
+            }
         })
         task.resume()
     }
